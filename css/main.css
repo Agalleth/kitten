@@ -1,0 +1,80 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+.row::before,
+.row::after {
+  content: " ";
+  display: table;
+}
+
+@media (max-width : 1560px) {
+  .container {
+    background-image: url("../assets/images/sunny-day.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .kitty{
+    background-image: url("../assets/images/kitten-medium.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 390px;
+  }
+  .empty{
+    min-height: 207px;
+  }
+@media (max-width: 768px) {
+  .container {
+    background-image: url("../assets/images/dawn.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .kitty{
+    background-image: url("../assets/images/kitten-large.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 58.33333333%;
+    min-height: 260px;
+    width: 100%;
+  }
+  .empty{
+      min-height: 250px;
+    }
+@media (max-width: 480px) {
+  .container {
+      background-image: url("../assets/images/night.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  .kitty{
+      background-image: url("../assets/images/kitten-small.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 100%;
+      min-height: 370px;
+    }
+  .empty{
+      min-height: 170px;
+    }
